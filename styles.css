@@ -229,23 +229,36 @@ a {
 
 .title {
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.2;
     font-family: 'Bungee Shade', cursive;
 }
 
 .is-he-a-dick {
-    font-size: 4rem;
+    font-size: 3rem;
     display: inline-block;
-    padding: 30px 40px 20px 40px;
-    background-color: white;
-    color: #052c5c;
-    border-radius: 15px;
     margin-top: 60px;
 }
 
 .is-he-a-dick h2 {
     margin: 0;
+}
+
+.is-he-a-dick a {
+    padding: 30px 40px 20px 40px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    color: #052c5c;
+    -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.is-he-a-dick a:hover {
+    background-color: #052c5c;
+    color: white;
 }
 
 .footer {
@@ -269,6 +282,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .title, .is-he-a-dick {
+        font-size: 4rem;
+    }
     .is-he-a-dick {
         margin-top: 100px;
     }
