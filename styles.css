@@ -1,0 +1,289 @@
+/* Global Styles */
+
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active, a:focus {
+    outline: none;
+    ie-dummy: expression(this.hideFocus=true);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img, object, embed, audio, video {
+    max-width: 100%;
+}
+
+i, em, .italic {
+    font-style: italic;
+}
+
+pre {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 1.5em; 
+}
+
+ol {
+   li {
+       padding: 5px 0;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.1;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+}
+
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    outline: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+    outline: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, textarea.form-control {
+    color: #333;
+    height: 45px;
+    line-height: 45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    @include fontSize(16px);
+    padding: 0 0 0 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+select, select.form-control {
+    color: #333;
+    border: 1px solid $borderbg;
+    height: 45px;
+    line-height: 45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    @include fontSize(16px);
+    padding: 0 0 0 10px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input:disabled{
+    background: $lightgray;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select.form-control:focus,
+textarea.form-control:focus {
+    box-shadow: none;
+}
+
+textarea.form-control {
+    min-height: 150px;
+}
+
+//IE fix, scroll bar overlaps content
+@-ms-viewport {
+    width: auto !important;
+}
+
+
+/* Custom Styles */
+
+body {
+    background-color: #052C5C;
+    color: white;
+    text-align: center;
+    font-family: 'Comfortaa';
+    min-height: 100%;
+    padding-top: 40px;
+}
+
+a {
+    color: #ffffff;
+}
+
+.container {
+    padding:50px 0; 
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right:0
+}
+
+.title {
+    font-weight: normal;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.is-he-a-dick {
+    font-size: 4rem;
+    display: inline-block;
+    padding: 30px 40px 20px 40px;
+    background-color: white;
+    color: #052c5c;
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+.is-he-a-dick h2 {
+    margin: 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    max-width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer .social {
+    float: left;
+    font-size: 30px;
+}
+
+.footer .copyright {
+    float: right;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .is-he-a-dick {
+        margin-top: 100px;
+    }
+    
+    .footer {
+        max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 1540px) {
+    .is-he-a-dick {
+        margin-top: 200px;
+    }
+    
+     .footer {
+        max-width: 1275px;
+    }
+}
