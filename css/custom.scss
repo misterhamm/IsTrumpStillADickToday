@@ -1,0 +1,107 @@
+/// <reference path="variables.scss" />
+
+body {
+  background-color: $primary;
+  color: $body;
+  text-align: center;
+  font-family: 'Comfortaa';
+  min-height: 100%;
+  padding-top: 40px;
+}
+
+a {
+  color: $body;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 50px 15px; 
+}
+
+.title {
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.is-he-a-dick {
+  font-size: 3rem;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.is-he-a-dick h2 {
+  margin: 0;
+}
+
+.is-he-a-dick a {
+  padding: 30px 40px 20px 40px;
+  background-color: $body;
+  border-radius: 15px;
+  border: 2px solid $body;
+  color: $primary;
+  display: inline-block;
+  -webkit-transition: all 0.1s ease-in-out;
+-moz-transition: all 0.1s ease-in-out;
+-o-transition: all 0.1s ease-in-out;
+transition: all 0.1s ease-in-out;
+}
+
+.is-he-a-dick a:hover {
+  background-color: $primary;
+  color: $body;
+}
+
+.quote {
+  margin-top: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  max-width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer .social {
+  float: left;
+  font-size: 30px;
+}
+
+.footer .copyright {
+  float: right;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .title, .is-he-a-dick {
+      font-size: 4rem;
+  }
+  .is-he-a-dick {
+      margin-top: 100px;
+  }
+  
+  .footer {
+      max-width: 750px;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .is-he-a-dick {
+      margin-top: 100px;
+  }
+
+  .quote {
+    font-size: 22px;
+    margin-top: 100px;
+  }
+  
+   .footer {
+      max-width: 1275px;
+  }
+}

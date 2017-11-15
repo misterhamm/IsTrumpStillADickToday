@@ -1,0 +1,31 @@
+// Mobile-First
+$breakpoint-extra-large: 1500px; // extra large desktop and above
+$breakpoint-large: 1170px; // large desktop and above
+$breakpoint-medium: 970px; // narrow desktop and above
+$breakpoint-small: 750px; // tablet and above
+
+// Colors
+$primary: #052C5C;
+$primary-offset: darkred;
+$secondary: blue;
+$secondary-offset: darkblue;
+
+//Text
+$body: #ffffff;
+$heading: $primary;
+$link: $secondary;
+$link-hover: $secondary;
+$alert: red;
+
+//Background
+$button-bg: $primary;
+$button-hover: $primary-offset;
+
+//Spacing
+$item-spacing: 10px; //for use in item grids
+$header-spacing: 30px;
+$footer-spacing: 30px;
+
+//Fonts
+$font-body: Arial, Sans-Serif;
+$font-heading: Arial, Sans-Serif;
