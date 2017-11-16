@@ -654,6 +654,11 @@ a {
   margin-top: 60px;
 }
 
+.quote-reload {
+  color: #052C5C;
+  margin-top: 30px;
+}
+
 .footer {
   position: absolute;
   bottom: 10px;
