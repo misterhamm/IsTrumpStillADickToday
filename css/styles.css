@@ -496,10 +496,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   outline: 0;
-  color: white;
+  color: #052C5C;
   text-transform: uppercase;
   font-weight: bold;
-  border: 0;
+  border: 1px solid white;
   box-shadow: none;
   cursor: pointer;
   height: 45px;
@@ -509,8 +509,16 @@ input[type="submit"] {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -520,6 +528,8 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
   outline: none;
+  color: white;
+  background-color: #052C5C;
 }
 
 input[type="search"] {
@@ -659,6 +669,10 @@ a {
   margin-top: 30px;
 }
 
+.share-container {
+  margin-top: 40px;
+}
+
 .footer {
   position: absolute;
   bottom: 10px;
@@ -685,6 +699,10 @@ a {
   }
   .is-he-a-dick {
     margin-top: 100px;
+  }
+  .share-container {
+    margin-top: 80px;
+    text-align: right;
   }
   .footer {
     max-width: 750px;

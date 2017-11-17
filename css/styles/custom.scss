@@ -46,9 +46,9 @@ a {
   color: $primary;
   display: inline-block;
   -webkit-transition: all 0.1s ease-in-out;
--moz-transition: all 0.1s ease-in-out;
--o-transition: all 0.1s ease-in-out;
-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .is-he-a-dick a:hover {
@@ -64,6 +64,10 @@ transition: all 0.1s ease-in-out;
     color: $primary;
     margin-top: 30px;
   }
+}
+
+.share-container {
+  margin-top: 40px;
 }
 
 .footer {
@@ -93,6 +97,11 @@ transition: all 0.1s ease-in-out;
   .is-he-a-dick {
       margin-top: 100px;
   }
+
+  .share-container {
+    margin-top: 80px;
+    text-align: right;
+  }
   
   .footer {
       max-width: 750px;
@@ -112,4 +121,5 @@ transition: all 0.1s ease-in-out;
    .footer {
       max-width: 1275px;
   }
+
 }
